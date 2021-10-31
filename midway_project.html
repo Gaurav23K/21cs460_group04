@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loan-prediction-ML</title>
+    <style>
+        html,
+        body {
+            
+            padding: 10;
+            font-family: "Helvetica Neue", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-color:rgb(195, 211, 211);
+        }
+
+        img{
+            align-items: center;
+        }
+    </style>
+ 
+</head>
+<body>
+    
+    <h1>Loan Prediction using ML</h1>
+    <div>Devansh Sharma  SPS </div>
+    <div>Gaurav Kanu  SPS </div> 
+    <div>Supervisor: <b>Dr. Amarendra Das</b> </div>
+    <a href="https://github.com/Gaurav23K/21cs460_group04">Github Repository</a>
+        
+    <h2>Motivation</h2>
+        <ul>
+            <li>Loan is the lending of money by individual in which the borrower incurs a debt that is paid as interest.</li>
+            <li>It becomes a challenging task for banks to find if a person may or may not repay the loan.</li>
+            <li>Traditionally bankers take basic information such as annual income ,previous loan history and assets to find out the eligibility of a person.</li>
+            <li>With the advancement of digital banking we now have large datasets containing information about previous loan transactions.</li>
+            <li><p>With the help of machine learning we can build models that can identify the eligibility and amount of loan to be given.</p></li>
+            
+        </ul>
+        <img src="https://miro.medium.com/max/1232/1*16xzAwUCpdWK-W7JlIq1dg.png" width="400px">
+    <h2>Plan</h2>
+        <ul>
+            <li>We will make two models, one that classifies if a person is eligible for a loan or not and second is how much loan can be given as a safe investment.</li>
+            <li>With the help of Linear regression and Logisitc Regression we can make both the models.</li>
+            <li>We will try to apply Neural Networks on our model to make it much better.</li>
+        </ul>
+    <h2>Algorithms and Datasets</h2>
+        
+    <h3>Algorithms</h3>
+        <ul>
+            <li>Support Vector Machines</li>
+            <li>Linear Regression</li>
+            <li>Logistic Regression</li>
+            <li>Decision Trees/Random Forests</li>
+            <li>Neural Networks</li>
+        </ul>
+    
+    <h3>Datasets</h3>
+        <ul>
+            <li>Primary dataset is to be searched</li>
+            <li>Backup data from kaggle <a href="https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset/metadata">link</a></li>
+            <li>Data from Lending Club's website</li>
+        </ul>
+    
+    
+    <h3>Division of Labour</h3>
+    <ul>
+    <li>We have planned our tasks till project midway which means completing the Logisitic Regression for loan eligibilty</li>
+    <li>Gaurav will work on finding new datasets and see the applicabilty of neural networks on our current model</li>
+    <li>Devansh will try to implement Logistic Regression.</li>
+    <li>Reports and website will be jointly handled.</li>
+    </ul>
+
+    <h1>Loan Prediction using ML</h1>
+    <div>Devansh Sharma  SPS </div>
+    <div>Gaurav Kanu  SPS </div> 
+    <div>Supervisor: <b>Dr. Amarendra Das</b> </div>
+    <a href="https://github.com/Gaurav23K/21cs460_group04">Github Repository</a>
+        
+    <h2>Midway</h2>
+        <ul>
+            <li><p>The primary data for the loan prediction model is obtained from “National Sample Survey (NSS) 77th round”, and the datasets are collected by the government of India.
+                The raw data collected from NSS is not as tidy as the data-frame shown during the project proposal.
+                </p></li>
+            <li>Under NSS, this data is collected under All India Debt & Investment Survery-2019</li>
+            <li>NSS surveyed over 118000 households and over 3 lakh individuals.Survey contains 14 blocks having data for basic information and debt information.</li>
+            <li><p>In India loans are usually returned as of by the whole household people than individually, so here we have related the people individually who have the access to credit cards and e-wallets. Because credit cards and e-wallets are the parameters which affects directly the chances of getting a loan from the bank.</p></li>
+            <li><p>The savings details of the individual person is not available, only the details of whether the person has issued a credit card or an e-wallet.</p></li>
+            
+        </ul>
+       
+    <h2>Plan</h2>
+        <ul>
+            <li>Here we have two approaches, First we have to work on individual data and secondly we can work on household data </li>
+            <li>In case of individual data, we have variables such as gender,eduation, age,land ,credit card and e-wallet data .Here we take gender,education, age as independent variable and owning credit card or e-wallet as dependent variable </li>
+            <li>For household data we have information regard debt such as applied for loan ,amount of loan.With the help of the same independent variables we can work out independent variable loan payment .</li>
+        </ul>
+    <h2>Algorithms and Datasets</h2>
+        
+    <h3>Algorithms</h3>
+        <ul>
+            <li>Support Vector Machines</li>
+            <li>Logistic Regression</li>
+            <li>Decision Trees</li>
+            <li>Naive Bayes </li>
+        </ul>
+    
+    <h3>Dataset Description</h3>
+        <ul>
+            <li>Descriptive identication of sample household</li>
+            <li>identification of sample household</li>
+            <li>particular of field operations</li>
+            <li>demographic and other particulars of household members</li>
+            <li>household characteristics</li>
+            <li>Rural land owned</li>
+            <li>Urban land owned</li>
+            <li>building and other constructions owned</li>
+            <li>livestock and poultry owned</li>
+            <li>transport equipment owned</li>
+            <li>agricultural machinery</li>
+            <li>financial assets</li>
+            <li>particulars of cash loans</li>
+            <li>value of transactions by household</li>
+          
+        </ul>
+    
+    
+    <h3>E-wallet prediction</h3>
+    <p>Here we use 2 algorithms decision tree and naive bayes classifier with dependent variable as owning e-wallet.This model can be a good indicator for predicting socio-economic status of our country.
+        <ul>
+            <li>The accuracy of decision tree is:  0.8108472028683712</li>
+            <li>The accuracy of Naive baise is:  0.8019226854968764</li>
+        </ul>
+    </p>
+
+    <h3>Credit-card prediction</h3>
+    <p>Here we use 2 algorithms decision tree and naive bayes classifier with dependent variable as owning credit card.This model can be a good indicator for predicting socio-economic status of our country.
+        <ul>
+            <li>The accuracy of decision tree is:  0.9750426654558549</li>
+            <li>The accuracy of Naive baise is:  0.9348353661400679</li>
+        </ul>
+    </p>
+    <h2>References</h2>
+    <ul>
+   <li>Joseph Adwere-Boamah – “Multiple logistic regression analysis of cigarette use among high school students”, Journal of Case Studies in Education
+</li>
+    <li>Leo Breiman – “Random Forests”,  	Statistics Department University of California Berkeley, CA 94720 (January 2001)
+    </li>
+    <li>I. Rish – “An empirical study of the naive Bayes classifier”, T.J. Watson Research Center
+    </li>
+    </ul>
+
+
+</body>
+</html>
